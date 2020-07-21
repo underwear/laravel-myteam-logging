@@ -4,10 +4,8 @@ Send logs to Myteam chat via Myteam bot
 
 ## Install
 
-```
-
+```bash
 composer require underwear/laravel-myteam-logging
-
 ```
 
 Define Myteam Bot Token and chat id (users myteam id) and set as environment parameters.
@@ -45,7 +43,7 @@ LOG_CHANNEL=myteam
 
 Publish config file
 ```
-php artisan vendor:publish --provider "Logger\MyteamLoggerServiceProvider"
+php artisan vendor:publish --provider "MyteamLogger\MyteamLoggerServiceProvider"
 ```
 
 ## Create bot
