@@ -1,6 +1,6 @@
 # Laravel Myteam logger
 
-Send logs to Myteam chat via Myteam bot
+Send logs to [Myteam](https://biz.mail.ru/myteam/) chat via Myteam bot
 
 ## Install
 
