@@ -44,7 +44,7 @@ class MyteamHandler extends AbstractProcessingHandler
     /**
      * @var string
      */
-    private $apiBaseUrl;
+    private $apiHost;
 
     /**
      * MyteamHandler constructor.
@@ -60,7 +60,7 @@ class MyteamHandler extends AbstractProcessingHandler
         // define variables for making Myteam request
         $this->botToken = config('myteam-logger.token');
         $this->chatId = config('myteam-logger.chat_id');
-        $this->apiBaseUrl = config ('myteam-logger.api_base_url');
+        $this->apiHost = config ('myteam-logger.api_host');
 
         // define variables for text message
         $this->appName = config('app.name');
@@ -79,7 +79,7 @@ class MyteamHandler extends AbstractProcessingHandler
         // trying to make request and send notification
         try {
             file_get_contents(
-                $this->apiBaseUrl . '/bot/v1/messages/sendText'
+                $this->apiHost . '/bot/v1/messages/sendText?'
                 . http_build_query([
                     'text' => $this->formatText($record['formatted'], $record['level_name']),
                     'chatId' => $this->chatId,

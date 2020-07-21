@@ -14,7 +14,7 @@ Add to <b>.env</b>
 ```
 MYTEAM_LOGGER_BOT_TOKEN=id:token
 MYTEAM_LOGGER_CHAT_ID=chat_id
-MYTEAM_LOGGER_API_BASE_URL=https://myteam.mail.ru/bot/v1
+MYTEAM_LOGGER_API_HOST=https://myteam.mail.ru/
 ```
 
 
