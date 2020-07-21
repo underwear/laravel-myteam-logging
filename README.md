@@ -25,7 +25,7 @@ Add to <b>config/logging.php</b> file new channel:
 ```php
 'myteam' => [
     'driver' => 'custom',
-    'via'    => Logger\MyteamLogger::class,
+    'via'    => MyteamLogger\MyteamLogger::class,
     'level'  => 'debug',
 ]
 ```
